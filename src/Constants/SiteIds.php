@@ -54,4 +54,6 @@ class SiteIds
     const PL = 212;
     // Singapore
     const SG = 216;
+    // Canada
+    const CA = 2;
 }

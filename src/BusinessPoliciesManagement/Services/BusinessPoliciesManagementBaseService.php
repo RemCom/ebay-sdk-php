@@ -14,7 +14,7 @@ class BusinessPoliciesManagementBaseService extends \DTS\eBaySDK\Services\BaseSe
     /**
      * HTTP header constant. The Authentication Token that is used to validate the caller has permission to access the eBay servers.
      */
-    const HDR_AUTH_TOKEN = 'X-EBAY-SOA-SECURITY-TOKEN';
+    const HDR_AUTH_TOKEN = 'X-EBAY-SOA-SECURITY-IAFTOKEN';
 
     /**
      * HTTP header constant. The global ID of the eBay site the request is for.
