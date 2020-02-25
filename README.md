@@ -38,7 +38,7 @@ The SDK can be installed with [Composer](http://getcomposer.org/). Please see th
   1. Install the SDK.
 
      ```
-     php composer.phar require dts/ebay-sdk-php
+     php composer.phar require cedcommerce/ebay-sdk-php
      ```
 
   1. Require Composer's autoloader by adding the following line to your code.
