@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\Base64BinaryType;
 
-class Base64BinaryTypeTest extends \PHPUnit_Framework_TestCase
+class Base64BinaryTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new Base64BinaryType();
     }

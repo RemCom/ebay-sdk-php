@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Finding\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Finding\Types\GalleryURL;
 
-class GalleryURLTest extends \PHPUnit_Framework_TestCase
+class GalleryURLTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GalleryURL();
     }

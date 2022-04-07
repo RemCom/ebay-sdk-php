@@ -1,9 +1,9 @@
 <?php
 namespace DTS\eBaySDK\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Debugger;
 
-class DebuggerTest extends \PHPUnit_Framework_TestCase
+class DebuggerTest extends TestCase
 {
     public function testOutputsDebugInformation()
     {

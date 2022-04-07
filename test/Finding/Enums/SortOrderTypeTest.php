@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Finding\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Finding\Enums\SortOrderType;
 
-class SortOrderTypeTest extends \PHPUnit_Framework_TestCase
+class SortOrderTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SortOrderType();
     }

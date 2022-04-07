@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Account\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Account\Enums\ReturnShippingCostPayerEnum;
 
-class ReturnShippingCostPayerEnumTest extends \PHPUnit_Framework_TestCase
+class ReturnShippingCostPayerEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReturnShippingCostPayerEnum();
     }

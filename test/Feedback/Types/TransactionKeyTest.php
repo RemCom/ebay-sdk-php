@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Feedback\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Feedback\Types\TransactionKey;
 
-class TransactionKeyTest extends \PHPUnit_Framework_TestCase
+class TransactionKeyTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TransactionKey();
     }

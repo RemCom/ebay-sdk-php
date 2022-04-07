@@ -1,6 +1,6 @@
 <?php
 namespace DTS\eBaySDK\Test\Services;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Test\TestTraits\ManageEnv;
 use DTS\eBaySDK\Services\BaseService;
 use DTS\eBaySDK\Credentials\Credentials;
@@ -9,7 +9,7 @@ use DTS\eBaySDK\Test\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends TestCase
 {
     use ManageEnv;
 

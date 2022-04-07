@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Shopping\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Shopping\Types\GetMultipleItemsRequestType;
 
-class GetMultipleItemsRequestTypeTest extends \PHPUnit_Framework_TestCase
+class GetMultipleItemsRequestTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetMultipleItemsRequestType();
     }

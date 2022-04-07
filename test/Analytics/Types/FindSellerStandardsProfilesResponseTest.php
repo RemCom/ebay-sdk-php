@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Analytics\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Analytics\Types\FindSellerStandardsProfilesResponse;
 
-class FindSellerStandardsProfilesResponseTest extends \PHPUnit_Framework_TestCase
+class FindSellerStandardsProfilesResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FindSellerStandardsProfilesResponse();
     }

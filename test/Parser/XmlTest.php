@@ -1,9 +1,9 @@
 <?php
-namespace DTS\eBaySDK\Parser\Test;
+namespace DTS\eBaySDK\Test\Parser\Test;
+use PHPUnit\Framework\TestCase;
+use DTS\eBaySDK\Test\Parser\XmlParser;
 
-use DTS\eBaySDK\Parser\XmlParser;
-
-class XmlTest extends \PHPUnit_Framework_TestCase
+class XmlTest extends TestCase
 {
     public function testCanParseXml()
     {

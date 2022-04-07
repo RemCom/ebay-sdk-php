@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Product\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Product\Types\FindCompatibilitiesBySpecificationResponse;
 
-class FindCompatibilitiesBySpecificationResponseTest extends \PHPUnit_Framework_TestCase
+class FindCompatibilitiesBySpecificationResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FindCompatibilitiesBySpecificationResponse();
     }

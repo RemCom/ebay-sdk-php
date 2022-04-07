@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Enums\ListingEnhancementsCodeType;
 
-class ListingEnhancementsCodeTypeTest extends \PHPUnit_Framework_TestCase
+class ListingEnhancementsCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ListingEnhancementsCodeType();
     }

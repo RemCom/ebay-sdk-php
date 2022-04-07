@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\PostOrder\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\PostOrder\Enums\OrderTypeEnum;
 
-class OrderTypeEnumTest extends \PHPUnit_Framework_TestCase
+class OrderTypeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new OrderTypeEnum();
     }

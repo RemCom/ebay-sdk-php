@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Marketing\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Marketing\Enums\ReportFormatEnum;
 
-class ReportFormatEnumTest extends \PHPUnit_Framework_TestCase
+class ReportFormatEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReportFormatEnum();
     }

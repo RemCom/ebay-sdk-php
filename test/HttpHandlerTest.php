@@ -1,13 +1,13 @@
 <?php
 namespace DTS\eBaySDK\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\HttpHandler;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 
-class HttpHandlerTest extends \PHPUnit_Framework_TestCase
+class HttpHandlerTest extends TestCase
 {
     public function testWorksWithSuccessfulRequest()
     {

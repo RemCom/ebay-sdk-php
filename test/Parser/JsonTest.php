@@ -1,9 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Parser\Test;
+namespace DTS\eBaySDK\Test\Parser;
 
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Parser\JsonParser;
 
-class JsonParserTest extends \PHPUnit_Framework_TestCase
+class JsonTest extends TestCase
 {
     public function testCanParseJson()
     {

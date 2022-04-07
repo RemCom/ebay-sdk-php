@@ -1,6 +1,6 @@
 <?php
 namespace DTS\eBaySDK\Test\FileTransfer\Mocks;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 
 class Service extends \DTS\eBaySDK\FileTransfer\Services\FileTransferBaseService

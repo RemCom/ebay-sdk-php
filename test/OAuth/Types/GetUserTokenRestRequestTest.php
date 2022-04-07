@@ -1,13 +1,13 @@
 <?php
 namespace DTS\eBaySDK\Test\OAuth\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\OAuth\Types\GetUserTokenRestRequest;
 
-class GetUserTokenRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetUserTokenRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetUserTokenRestRequest();
     }

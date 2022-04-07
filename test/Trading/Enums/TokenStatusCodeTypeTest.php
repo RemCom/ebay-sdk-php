@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Enums\TokenStatusCodeType;
 
-class TokenStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class TokenStatusCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TokenStatusCodeType();
     }

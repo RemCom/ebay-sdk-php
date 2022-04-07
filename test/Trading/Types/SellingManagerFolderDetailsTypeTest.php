@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\SellingManagerFolderDetailsType;
 
-class SellingManagerFolderDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class SellingManagerFolderDetailsTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SellingManagerFolderDetailsType();
     }

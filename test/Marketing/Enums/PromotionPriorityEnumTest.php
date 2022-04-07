@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Marketing\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Marketing\Enums\PromotionPriorityEnum;
 
-class PromotionPriorityEnumTest extends \PHPUnit_Framework_TestCase
+class PromotionPriorityEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PromotionPriorityEnum();
     }

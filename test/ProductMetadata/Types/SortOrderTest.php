@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ProductMetadata\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ProductMetadata\Types\SortOrder;
 
-class SortOrderTest extends \PHPUnit_Framework_TestCase
+class SortOrderTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SortOrder();
     }

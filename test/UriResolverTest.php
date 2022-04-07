@@ -1,10 +1,10 @@
 <?php
 namespace DTS\eBaySDK\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\UriResolver;
 use DTS\eBaySDK\Test\Mocks\StaticMethods;
 
-class UriResolverTest extends \PHPUnit_Framework_TestCase
+class UriResolverTest extends TestCase
 {
     public function testDefaults()
     {

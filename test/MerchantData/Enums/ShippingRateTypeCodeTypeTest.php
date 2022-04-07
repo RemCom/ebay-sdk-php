@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Enums\ShippingRateTypeCodeType;
 
-class ShippingRateTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class ShippingRateTypeCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ShippingRateTypeCodeType();
     }

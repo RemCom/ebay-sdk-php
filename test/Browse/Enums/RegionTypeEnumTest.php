@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Browse\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Browse\Enums\RegionTypeEnum;
 
-class RegionTypeEnumTest extends \PHPUnit_Framework_TestCase
+class RegionTypeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RegionTypeEnum();
     }

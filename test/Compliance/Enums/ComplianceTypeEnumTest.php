@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Compliance\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Compliance\Enums\ComplianceTypeEnum;
 
-class ComplianceTypeEnumTest extends \PHPUnit_Framework_TestCase
+class ComplianceTypeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ComplianceTypeEnum();
     }

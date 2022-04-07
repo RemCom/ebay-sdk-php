@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\HalfFinding\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\HalfFinding\Enums\SortOrder;
 
-class SortOrderTest extends \PHPUnit_Framework_TestCase
+class SortOrderTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SortOrder();
     }

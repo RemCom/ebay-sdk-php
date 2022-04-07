@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\RelatedItemsManagement\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\RelatedItemsManagement\Enums\DiscountTypeEnum;
 
-class DiscountTypeEnumTest extends \PHPUnit_Framework_TestCase
+class DiscountTypeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DiscountTypeEnum();
     }

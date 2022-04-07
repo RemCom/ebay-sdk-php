@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Finding\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Finding\Enums\GallerySizeEnum;
 
-class GallerySizeEnumTest extends \PHPUnit_Framework_TestCase
+class GallerySizeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GallerySizeEnum();
     }

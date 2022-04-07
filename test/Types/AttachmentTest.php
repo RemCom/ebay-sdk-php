@@ -1,18 +1,18 @@
 <?php
 namespace DTS\eBaySDK\Types\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Test\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class AttachmentTest extends \PHPUnit_Framework_TestCase
+class AttachmentTest extends TestCase
 {
     private $httpHandler;
     private $service;
     private $request;
     private $requestXml;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         /**
          * Use a class that will fake sending requests and getting responses.

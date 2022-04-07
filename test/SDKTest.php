@@ -1,13 +1,13 @@
 <?php
 namespace DTS\eBaySDK\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Sdk;
 
-class SdkTest extends \PHPUnit_Framework_TestCase
+class SDKTest extends TestCase
 {
     private $sdk;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->sdk = new Sdk([
             'apiVersion' => '',

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ResolutionCaseManagement\Enums\EBPSNADCaseStatusType;
 
-class EBPSNADCaseStatusTypeTest extends \PHPUnit_Framework_TestCase
+class EBPSNADCaseStatusTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new EBPSNADCaseStatusType();
     }

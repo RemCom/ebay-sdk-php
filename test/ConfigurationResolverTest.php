@@ -1,10 +1,10 @@
 <?php
 namespace DTS\eBaySDK\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ConfigurationResolver;
 use DTS\eBaySDK\Test\Mocks\StaticMethods;
 
-class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
+class ConfigurationResolverTest extends TestCase
 {
     public function testDefaults()
     {

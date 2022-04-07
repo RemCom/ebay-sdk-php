@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Enums\BidderTypeCodeType;
 
-class BidderTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class BidderTypeCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BidderTypeCodeType();
     }

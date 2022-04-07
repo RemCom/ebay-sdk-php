@@ -1,9 +1,9 @@
 <?php
 namespace DTS\eBaySDK\Constants\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Constants\GlobalIds as GlobalIds;
 
-class GlobalIdsTest extends \PHPUnit_Framework_TestCase
+class GlobalIdsTest extends TestCase
 {
     public function testConstantsAreCorrectType()
     {

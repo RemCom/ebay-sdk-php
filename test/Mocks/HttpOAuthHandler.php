@@ -1,6 +1,6 @@
 <?php
 namespace DTS\eBaySDK\Test\Mocks;
-
+use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\Response;

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Merchandising\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Merchandising\Types\Affiliate;
 
-class AffiliateTest extends \PHPUnit_Framework_TestCase
+class AffiliateTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new Affiliate();
     }

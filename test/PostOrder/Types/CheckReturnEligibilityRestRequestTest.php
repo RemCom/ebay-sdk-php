@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\PostOrder\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\PostOrder\Types\CheckReturnEligibilityRestRequest;
 
-class CheckReturnEligibilityRestRequestTest extends \PHPUnit_Framework_TestCase
+class CheckReturnEligibilityRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CheckReturnEligibilityRestRequest();
     }

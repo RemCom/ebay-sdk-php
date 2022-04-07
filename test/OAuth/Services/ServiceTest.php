@@ -1,13 +1,13 @@
 <?php
 namespace DTS\eBaySDK\Test\OAuth\Services;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Test\TestTraits\ManageEnv;
 use DTS\eBaySDK\OAuth\Services\OAuthService;
 use DTS\eBaySDK\Test\Mocks\HttpOAuthHandler;
 use DTS\eBaySDK\Credentials\Credentials;
 use DTS\eBaySDK\Credentials\CredentialsProvider;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends TestCase
 {
     use ManageEnv;
 

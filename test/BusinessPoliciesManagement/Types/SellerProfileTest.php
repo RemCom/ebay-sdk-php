@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\BusinessPoliciesManagement\Types\SellerProfile;
 
-class SellerProfileTest extends \PHPUnit_Framework_TestCase
+class SellerProfileTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SellerProfile();
     }

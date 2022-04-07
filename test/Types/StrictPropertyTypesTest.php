@@ -1,19 +1,19 @@
 <?php
 namespace DTS\eBaySDK\Types\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 
-class StrictPropertyTypesTest extends \PHPUnit_Framework_TestCase
+class StrictPropertyTypesTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         \DTS\eBaySDK\Sdk::$STRICT_PROPERTY_TYPES = false;
         $this->obj = new ComplexClass();
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         \DTS\eBaySDK\Sdk::$STRICT_PROPERTY_TYPES = true;
     }

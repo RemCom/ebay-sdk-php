@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Catalog\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Catalog\Types\CorrectionAspectValues;
 
-class CorrectionAspectValuesTest extends \PHPUnit_Framework_TestCase
+class CorrectionAspectValuesTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CorrectionAspectValues();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Finding\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Finding\Types\GalleryInfoContainer;
 
-class GalleryInfoContainerTest extends \PHPUnit_Framework_TestCase
+class GalleryInfoContainerTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GalleryInfoContainer();
     }

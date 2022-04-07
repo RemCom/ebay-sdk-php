@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\RelatedItemsManagement\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\RelatedItemsManagement\Enums\BundleDetailEnum;
 
-class BundleDetailEnumTest extends \PHPUnit_Framework_TestCase
+class BundleDetailEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BundleDetailEnum();
     }

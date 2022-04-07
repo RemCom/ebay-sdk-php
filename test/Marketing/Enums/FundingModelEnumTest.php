@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Marketing\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Marketing\Enums\FundingModelEnum;
 
-class FundingModelEnumTest extends \PHPUnit_Framework_TestCase
+class FundingModelEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FundingModelEnum();
     }

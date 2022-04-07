@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\PostOrder\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\PostOrder\Types\EscalationEligibilityInfo;
 
-class EscalationEligibilityInfoTest extends \PHPUnit_Framework_TestCase
+class EscalationEligibilityInfoTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new EscalationEligibilityInfo();
     }

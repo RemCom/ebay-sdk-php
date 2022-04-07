@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Enums\SelectionModeCodeType;
 
-class SelectionModeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class SelectionModeCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SelectionModeCodeType();
     }

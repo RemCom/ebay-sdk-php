@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\PostOrder\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\PostOrder\Types\SendShippingLabelResponse;
 
-class SendShippingLabelResponseTest extends \PHPUnit_Framework_TestCase
+class SendShippingLabelResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SendShippingLabelResponse();
     }

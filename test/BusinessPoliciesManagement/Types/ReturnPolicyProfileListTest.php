@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\BusinessPoliciesManagement\Types\ReturnPolicyProfileList;
 
-class ReturnPolicyProfileListTest extends \PHPUnit_Framework_TestCase
+class ReturnPolicyProfileListTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReturnPolicyProfileList();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ResolutionCaseManagement\Types\OfferPartialRefundResponse;
 
-class OfferPartialRefundResponseTest extends \PHPUnit_Framework_TestCase
+class OfferPartialRefundResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new OfferPartialRefundResponse();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ProductMetadata\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ProductMetadata\Types\TypeSpecificInformation;
 
-class TypeSpecificInformationTest extends \PHPUnit_Framework_TestCase
+class TypeSpecificInformationTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TypeSpecificInformation();
     }

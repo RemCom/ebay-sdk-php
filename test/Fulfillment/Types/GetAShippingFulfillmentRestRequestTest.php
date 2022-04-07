@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Fulfillment\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Fulfillment\Types\GetAShippingFulfillmentRestRequest;
 
-class GetAShippingFulfillmentRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetAShippingFulfillmentRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetAShippingFulfillmentRestRequest();
     }

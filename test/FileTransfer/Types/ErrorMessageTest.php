@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\FileTransfer\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\FileTransfer\Types\ErrorMessage;
 
-class ErrorMessageTest extends \PHPUnit_Framework_TestCase
+class ErrorMessageTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ErrorMessage();
     }

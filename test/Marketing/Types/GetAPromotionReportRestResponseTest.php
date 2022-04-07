@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Marketing\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Marketing\Types\GetAPromotionReportRestResponse;
 
-class GetAPromotionReportRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetAPromotionReportRestResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetAPromotionReportRestResponse();
     }

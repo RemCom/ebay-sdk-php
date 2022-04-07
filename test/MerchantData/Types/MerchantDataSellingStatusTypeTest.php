@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Types\MerchantDataSellingStatusType;
 
-class MerchantDataSellingStatusTypeTest extends \PHPUnit_Framework_TestCase
+class MerchantDataSellingStatusTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MerchantDataSellingStatusType();
     }

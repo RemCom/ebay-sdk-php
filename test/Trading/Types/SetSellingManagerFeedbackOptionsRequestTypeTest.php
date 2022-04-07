@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType;
 
-class SetSellingManagerFeedbackOptionsRequestTypeTest extends \PHPUnit_Framework_TestCase
+class SetSellingManagerFeedbackOptionsRequestTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SetSellingManagerFeedbackOptionsRequestType();
     }

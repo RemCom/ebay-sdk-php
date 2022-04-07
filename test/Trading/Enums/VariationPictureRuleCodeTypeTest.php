@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Enums\VariationPictureRuleCodeType;
 
-class VariationPictureRuleCodeTypeTest extends \PHPUnit_Framework_TestCase
+class VariationPictureRuleCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new VariationPictureRuleCodeType();
     }

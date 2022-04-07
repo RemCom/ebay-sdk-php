@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Taxonomy\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Taxonomy\Types\CategoryTreeNode;
 
-class CategoryTreeNodeTest extends \PHPUnit_Framework_TestCase
+class CategoryTreeNodeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CategoryTreeNode();
     }

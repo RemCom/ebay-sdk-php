@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Merchandising\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Merchandising\Enums\ErrorSeverity;
 
-class ErrorSeverityTest extends \PHPUnit_Framework_TestCase
+class ErrorSeverityTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ErrorSeverity();
     }

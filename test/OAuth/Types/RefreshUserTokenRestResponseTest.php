@@ -1,13 +1,13 @@
 <?php
 namespace DTS\eBaySDK\Test\OAuth\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\OAuth\Types\RefreshUserTokenRestResponse;
 
-class RefreshUserTokenRestResponseTest extends \PHPUnit_Framework_TestCase
+class RefreshUserTokenRestResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RefreshUserTokenRestResponse();
     }

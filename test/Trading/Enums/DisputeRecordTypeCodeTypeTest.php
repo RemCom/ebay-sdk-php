@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Enums\DisputeRecordTypeCodeType;
 
-class DisputeRecordTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class DisputeRecordTypeCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DisputeRecordTypeCodeType();
     }

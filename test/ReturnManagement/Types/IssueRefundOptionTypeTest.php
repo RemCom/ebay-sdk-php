@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ReturnManagement\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ReturnManagement\Types\IssueRefundOptionType;
 
-class IssueRefundOptionTypeTest extends \PHPUnit_Framework_TestCase
+class IssueRefundOptionTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new IssueRefundOptionType();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Merchandising\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Merchandising\Enums\PriceTreatmentEnum;
 
-class PriceTreatmentEnumTest extends \PHPUnit_Framework_TestCase
+class PriceTreatmentEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PriceTreatmentEnum();
     }

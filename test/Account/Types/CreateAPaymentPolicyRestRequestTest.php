@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Account\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Account\Types\CreateAPaymentPolicyRestRequest;
 
-class CreateAPaymentPolicyRestRequestTest extends \PHPUnit_Framework_TestCase
+class CreateAPaymentPolicyRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CreateAPaymentPolicyRestRequest();
     }

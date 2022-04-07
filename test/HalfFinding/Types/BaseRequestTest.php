@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\HalfFinding\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\HalfFinding\Types\BaseRequest;
 
-class BaseRequestTest extends \PHPUnit_Framework_TestCase
+class BaseRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BaseRequest();
     }

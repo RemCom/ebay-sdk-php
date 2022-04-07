@@ -1,13 +1,13 @@
 <?php
 namespace DTS\eBaySDK\Types\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Types\RepeatableType;
 
-class RepeatableTypeTest extends \PHPUnit_Framework_TestCase
+class RepeatableTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RepeatableType('', '', 'string');
     }

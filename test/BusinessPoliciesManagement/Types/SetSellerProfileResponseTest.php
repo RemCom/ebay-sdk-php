@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\BusinessPoliciesManagement\Types\SetSellerProfileResponse;
 
-class SetSellerProfileResponseTest extends \PHPUnit_Framework_TestCase
+class SetSellerProfileResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SetSellerProfileResponse();
     }

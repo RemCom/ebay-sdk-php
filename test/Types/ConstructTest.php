@@ -1,11 +1,11 @@
 <?php
 namespace DTS\eBaySDK\Types\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Test\Mocks\AmountClass;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 use DTS\eBaySDK\Test\Mocks\SimpleClass;
 
-class ConstructTest extends \PHPUnit_Framework_TestCase
+class ConstructTest extends TestCase
 {
     public function testSettingPropertiesViaCtor()
     {

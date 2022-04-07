@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Account\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Account\Types\CreateAFulfillmentPolicyRestRequest;
 
-class CreateAFulfillmentPolicyRestRequestTest extends \PHPUnit_Framework_TestCase
+class CreateAFulfillmentPolicyRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CreateAFulfillmentPolicyRestRequest();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Merchandising\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Merchandising\Types\ItemRecommendations;
 
-class ItemRecommendationsTest extends \PHPUnit_Framework_TestCase
+class ItemRecommendationsTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ItemRecommendations();
     }

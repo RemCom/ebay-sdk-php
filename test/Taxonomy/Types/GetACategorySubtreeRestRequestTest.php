@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Taxonomy\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestRequest;
 
-class GetACategorySubtreeRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetACategorySubtreeRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetACategorySubtreeRestRequest();
     }

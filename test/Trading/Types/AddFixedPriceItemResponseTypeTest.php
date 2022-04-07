@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\AddFixedPriceItemResponseType;
 
-class AddFixedPriceItemResponseTypeTest extends \PHPUnit_Framework_TestCase
+class AddFixedPriceItemResponseTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AddFixedPriceItemResponseType();
     }

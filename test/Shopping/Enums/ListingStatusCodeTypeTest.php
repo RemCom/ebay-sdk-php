@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Shopping\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Shopping\Enums\ListingStatusCodeType;
 
-class ListingStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class ListingStatusCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ListingStatusCodeType();
     }

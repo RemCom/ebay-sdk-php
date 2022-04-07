@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Types\IntegratedMerchantCreditCardInfoType;
 
-class IntegratedMerchantCreditCardInfoTypeTest extends \PHPUnit_Framework_TestCase
+class IntegratedMerchantCreditCardInfoTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new IntegratedMerchantCreditCardInfoType();
     }

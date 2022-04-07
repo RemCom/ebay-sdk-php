@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ResolutionCaseManagement\Types\ProvideReturnInfoResponse;
 
-class ProvideReturnInfoResponseTest extends \PHPUnit_Framework_TestCase
+class ProvideReturnInfoResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ProvideReturnInfoResponse();
     }

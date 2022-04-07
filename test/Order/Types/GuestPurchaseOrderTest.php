@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Order\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Order\Types\GuestPurchaseOrder;
 
-class GuestPurchaseOrderTest extends \PHPUnit_Framework_TestCase
+class GuestPurchaseOrderTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GuestPurchaseOrder();
     }

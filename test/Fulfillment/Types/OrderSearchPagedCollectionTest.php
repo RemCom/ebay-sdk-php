@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Fulfillment\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Fulfillment\Types\OrderSearchPagedCollection;
 
-class OrderSearchPagedCollectionTest extends \PHPUnit_Framework_TestCase
+class OrderSearchPagedCollectionTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new OrderSearchPagedCollection();
     }

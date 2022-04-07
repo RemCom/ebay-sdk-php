@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\SellerRatingSummaryArrayType;
 
-class SellerRatingSummaryArrayTypeTest extends \PHPUnit_Framework_TestCase
+class SellerRatingSummaryArrayTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SellerRatingSummaryArrayType();
     }

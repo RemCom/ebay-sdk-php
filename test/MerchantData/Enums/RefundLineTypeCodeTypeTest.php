@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Enums\RefundLineTypeCodeType;
 
-class RefundLineTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class RefundLineTypeCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RefundLineTypeCodeType();
     }

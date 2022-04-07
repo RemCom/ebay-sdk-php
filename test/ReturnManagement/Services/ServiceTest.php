@@ -1,12 +1,12 @@
 <?php
 namespace DTS\eBaySDK\Test\ReturnManagement\Services;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ReturnManagement\Services\ReturnManagementBaseService;
 use DTS\eBaySDK\ReturnManagement\Services\ReturnManagementService;
 use DTS\eBaySDK\Test\ReturnManagement\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends TestCase
 {
     public function testConfigDefinitions()
     {

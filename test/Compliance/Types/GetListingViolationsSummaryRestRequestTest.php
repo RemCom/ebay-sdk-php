@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Compliance\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Compliance\Types\GetListingViolationsSummaryRestRequest;
 
-class GetListingViolationsSummaryRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetListingViolationsSummaryRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetListingViolationsSummaryRestRequest();
     }
