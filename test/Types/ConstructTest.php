@@ -57,19 +57,19 @@ class ConstructTest extends TestCase
         $obj = new ComplexClass($values);
 
         $this->assertEquals('foo', $obj->foo);
-        $this->assertInternalType('string', $obj->foo);
+        $this->assertIsString( $obj->foo);
 
         $this->assertEquals(123, $obj->integer);
-        $this->assertInternalType('integer', $obj->integer);
+        $this->assertIsInt( $obj->integer);
 
         $this->assertEquals(123.45, $obj->double);
-        $this->assertInternalType('float', $obj->double);
+        $this->assertIsFloat( $obj->double);
 
         $this->assertEquals(true, $obj->booleanTrue);
-        $this->assertInternalType('boolean', $obj->booleanTrue);
+        $this->assertIsBool( $obj->booleanTrue);
 
         $this->assertEquals(false, $obj->booleanFalse);
-        $this->assertInternalType('boolean', $obj->booleanFalse);
+        $this->assertIsBool( $obj->booleanFalse);
 
         $this->assertEquals(
             new \DateTime('2000-01-01T00:00:00.000Z', new \DateTimeZone('UTC')),

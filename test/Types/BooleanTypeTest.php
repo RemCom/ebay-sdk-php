@@ -26,6 +26,6 @@ class BooleanTypeTest extends TestCase
     {
         $this->obj->value = true;
         $this->assertEquals(true, $this->obj->value);
-        $this->assertInternalType('boolean', $this->obj->value);
+        $this->assertIsBool( $this->obj->value);
     }
 }

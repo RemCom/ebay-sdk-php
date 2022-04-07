@@ -26,6 +26,6 @@ class DoubleTypeTest extends TestCase
     {
         $this->obj->value = 123.45;
         $this->assertEquals(123.45, $this->obj->value);
-        $this->assertInternalType('float', $this->obj->value);
+        $this->assertIsFloat( $this->obj->value);
     }
 }

@@ -34,23 +34,23 @@ class SimpleClassTest extends TestCase
     {
         $this->obj->integer = 123;
         $this->assertEquals(123, $this->obj->integer);
-        $this->assertInternalType('integer', $this->obj->integer);
+        $this->assertIsInt( $this->obj->integer);
 
         $this->obj->string = 'foo';
         $this->assertEquals('foo', $this->obj->string);
-        $this->assertInternalType('string', $this->obj->string);
+        $this->assertIsString( $this->obj->string);
 
         $this->obj->double = 123.45;
         $this->assertEquals(123.45, $this->obj->double);
-        $this->assertInternalType('float', $this->obj->double);
+        $this->assertIsFloat( $this->obj->double);
 
         $this->obj->booleanTrue = true;
         $this->assertEquals(true, $this->obj->booleanTrue);
-        $this->assertInternalType('boolean', $this->obj->booleanTrue);
+        $this->assertIsBool( $this->obj->booleanTrue);
 
         $this->obj->booleanFalse = false;
         $this->assertEquals(false, $this->obj->booleanFalse);
-        $this->assertInternalType('boolean', $this->obj->booleanFalse);
+        $this->assertIsBool( $this->obj->booleanFalse);
 
         $date = new \DateTime('2000-01-01', new \DateTimeZone('UTC'));
         $this->obj->DateTime = $date;
