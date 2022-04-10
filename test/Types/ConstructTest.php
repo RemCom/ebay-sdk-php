@@ -123,7 +123,8 @@ class ConstructTest extends TestCase
 
     public function testSettingInvalidPropertyViaCtor()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property bar');
+        $this->expectException('\DTS\eBaySDK\Exceptions\UnknownPropertyException');
+        $this->expectExceptionMessage('Unknown property foo');
 
         new ComplexClass([
             'bar' => 'bar'
@@ -132,7 +133,8 @@ class ConstructTest extends TestCase
 
     public function testSettingInvalidPropertyTypeViaCtor()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for string. Expected string but got integer');
+        $this->expectException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException');
+        $this->expectExceptionMessage('Invalid property type provided for string. Expected string but got integer');
 
         new ComplexClass([
             'string' => 123

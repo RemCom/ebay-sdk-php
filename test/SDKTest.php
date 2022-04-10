@@ -60,7 +60,8 @@ class SDKTest extends TestCase
 
     public function testCallingUnknownMethod()
     {
-        $this->setExpectedException('\BadMethodCallException', 'Unknown method: foo');
+        $this->expectException('\BadMethodCallException');
+        $this->expectExceptionMessage('Unknown method: foo');
 
         $this->sdk->foo();
     }

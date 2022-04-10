@@ -98,7 +98,8 @@ class PropertyFixesTest extends TestCase
 
     public function testPriceDiscountSubtotalDoesNotExist()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property');
+        $this->expectException('\DTS\eBaySDK\Exceptions\UnknownPropertyException');
+        $this->expectExceptionMessage('Unknown property');
 
         $obj = new Sdk\Fulfillment\Types\PricingSummary();
 
