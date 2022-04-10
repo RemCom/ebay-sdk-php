@@ -124,7 +124,7 @@ class ConstructTest extends TestCase
     public function testSettingInvalidPropertyViaCtor()
     {
         $this->expectException('\DTS\eBaySDK\Exceptions\UnknownPropertyException');
-        $this->expectExceptionMessage('Unknown property foo');
+        $this->expectExceptionMessage('Unknown property bar');
 
         new ComplexClass([
             'bar' => 'bar'
