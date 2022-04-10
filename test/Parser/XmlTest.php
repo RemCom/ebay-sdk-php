@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Test\Parser\Test;
+namespace DTS\eBaySDK\Test\Parser;
 use PHPUnit\Framework\TestCase;
-use DTS\eBaySDK\Test\Parser\XmlParser;
+use DTS\eBaySDK\Parser\XmlParser;
 
 class XmlTest extends TestCase
 {

@@ -103,12 +103,10 @@ class ServiceTest extends TestCase
         ]));
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage state parameter
-     */
     public function testExceptionThrowForMissingStateParam()
     {
+        $this->expectExceptionMessage("state parameter");
+        $this->expectException(\InvalidArgumentException::class);
         $s = new OAuthService([
             'credentials' => [
                 'appId'  => 'foo',
@@ -123,12 +121,10 @@ class ServiceTest extends TestCase
         ]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage scope parameter
-     */
     public function testExceptionThrowForMissingScopeParam()
     {
+        $this->expectExceptionMessage("scope parameter");
+        $this->expectException(\InvalidArgumentException::class);
         $s = new OAuthService([
             'credentials' => [
                 'appId'  => 'foo',
@@ -271,10 +267,10 @@ class ServiceTest extends TestCase
         ]);
         $r = $s->getAppToken();
 
-        $this->assertContains('Content-Type: application/x-www-form-urlencoded', $str);
-        $this->assertContains('Content-Length: '.strlen($body), $str);
-        $this->assertContains('foo', $str);
-        $this->assertContains('bar', $str);
+        $this->assertStringContainsString('Content-Type: application/x-www-form-urlencoded', $str);
+        $this->assertStringContainsString('Content-Length: '.strlen($body), $str);
+        $this->assertStringContainsString('foo', $str);
+        $this->assertStringContainsString('bar', $str);
     }
 
     public function testCredentialsInstanceCanBePassed()
@@ -348,12 +344,10 @@ EOT;
         unlink($dir . '/credentials');
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage No credentials present in INI profile
-     */
     public function testCredentialsIniWillThrowException()
     {
+        $this->expectExceptionMessage("No credentials present in INI profile");
+        $this->expectException(\InvalidArgumentException::class);
         $ini = <<<EOT
 [foo]
 EOT;
@@ -375,12 +369,10 @@ EOT;
         }
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Cannot locate credentials
-     */
     public function testCredentialsProviderThrowsIfCantProvide()
     {
+        $this->expectExceptionMessage("Cannot locate credentials");
+        $this->expectException(\InvalidArgumentException::class);
         new OAuthService([
             'credentials' => function () {
                 return new \InvalidArgumentException('Cannot locate credentials');
@@ -429,12 +421,10 @@ EOT;
         ], $s->getConfig());
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Invalid configuration value provided for "sandbox". Expected bool, but got int(-1)
-     */
     public function testSetConfigWillThrow()
     {
+        $this->expectExceptionMessage("Invalid configuration value provided for \"sandbox\". Expected bool, but got int(-1)");
+        $this->expectException(\InvalidArgumentException::class);
         $s = new OAuthService([
             'credentials' => [
                 'appId'  => '',

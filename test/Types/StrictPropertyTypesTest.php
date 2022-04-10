@@ -37,19 +37,15 @@ class StrictPropertyTypesTest extends TestCase
         $this->assertEquals(123, $this->obj->strings[0]);
     }
 
-    /**
-     * @expectedException \DTS\eBaySDK\Exceptions\InvalidPropertyTypeException
-     */
     public function testSettingComplexPropertiesThrows()
     {
+        $this->expectException(\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException::class);
         $this->obj->SimpleClass = 'foo';
     }
 
-    /**
-     * @expectedException \DTS\eBaySDK\Exceptions\InvalidPropertyTypeException
-     */
     public function testSettingComplexRepeatablePropertiesThrows()
     {
+        $this->expectException(\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException::class);
         $this->obj->simpleClasses[] = 'foo';
     }
 }
