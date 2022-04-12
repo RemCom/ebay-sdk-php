@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Catalog\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Catalog\Enums\ChangeRequestStatus;
 
-class ChangeRequestStatusTest extends \PHPUnit_Framework_TestCase
+class ChangeRequestStatusTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ChangeRequestStatus();
     }

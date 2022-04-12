@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Browse\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Browse\Types\SortField;
 
-class SortFieldTest extends \PHPUnit_Framework_TestCase
+class SortFieldTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SortField();
     }

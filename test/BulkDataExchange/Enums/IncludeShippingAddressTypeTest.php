@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\BulkDataExchange\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\BulkDataExchange\Enums\IncludeShippingAddressType;
 
-class IncludeShippingAddressTypeTest extends \PHPUnit_Framework_TestCase
+class IncludeShippingAddressTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new IncludeShippingAddressType();
     }

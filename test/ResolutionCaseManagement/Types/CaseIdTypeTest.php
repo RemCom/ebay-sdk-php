@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ResolutionCaseManagement\Types\CaseIdType;
 
-class CaseIdTypeTest extends \PHPUnit_Framework_TestCase
+class CaseIdTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CaseIdType();
     }

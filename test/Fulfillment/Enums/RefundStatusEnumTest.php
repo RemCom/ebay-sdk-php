@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Fulfillment\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Fulfillment\Enums\RefundStatusEnum;
 
-class RefundStatusEnumTest extends \PHPUnit_Framework_TestCase
+class RefundStatusEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RefundStatusEnum();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\GetClientAlertsAuthTokenResponseType;
 
-class GetClientAlertsAuthTokenResponseTypeTest extends \PHPUnit_Framework_TestCase
+class GetClientAlertsAuthTokenResponseTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetClientAlertsAuthTokenResponseType();
     }

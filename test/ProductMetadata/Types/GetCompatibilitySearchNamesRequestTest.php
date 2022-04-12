@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ProductMetadata\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesRequest;
 
-class GetCompatibilitySearchNamesRequestTest extends \PHPUnit_Framework_TestCase
+class GetCompatibilitySearchNamesRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetCompatibilitySearchNamesRequest();
     }

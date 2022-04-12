@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Account\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Account\Types\RecipientAccountReference;
 
-class RecipientAccountReferenceTest extends \PHPUnit_Framework_TestCase
+class RecipientAccountReferenceTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RecipientAccountReference();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Types\DistanceType;
 
-class DistanceTypeTest extends \PHPUnit_Framework_TestCase
+class DistanceTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DistanceType();
     }

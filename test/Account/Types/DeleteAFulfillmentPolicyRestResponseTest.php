@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Account\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Account\Types\DeleteAFulfillmentPolicyRestResponse;
 
-class DeleteAFulfillmentPolicyRestResponseTest extends \PHPUnit_Framework_TestCase
+class DeleteAFulfillmentPolicyRestResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DeleteAFulfillmentPolicyRestResponse();
     }

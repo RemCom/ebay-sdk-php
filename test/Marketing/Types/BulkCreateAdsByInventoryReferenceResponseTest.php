@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Marketing\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Marketing\Types\BulkCreateAdsByInventoryReferenceResponse;
 
-class BulkCreateAdsByInventoryReferenceResponseTest extends \PHPUnit_Framework_TestCase
+class BulkCreateAdsByInventoryReferenceResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BulkCreateAdsByInventoryReferenceResponse();
     }

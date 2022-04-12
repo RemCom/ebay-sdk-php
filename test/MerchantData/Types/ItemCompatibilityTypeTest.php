@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Types\ItemCompatibilityType;
 
-class ItemCompatibilityTypeTest extends \PHPUnit_Framework_TestCase
+class ItemCompatibilityTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ItemCompatibilityType();
     }

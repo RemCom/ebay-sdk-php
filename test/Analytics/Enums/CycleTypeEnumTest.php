@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Analytics\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Analytics\Enums\CycleTypeEnum;
 
-class CycleTypeEnumTest extends \PHPUnit_Framework_TestCase
+class CycleTypeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CycleTypeEnum();
     }

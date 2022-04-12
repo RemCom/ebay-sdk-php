@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Taxonomy\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Taxonomy\Enums\MarketplaceIdEnum;
 
-class MarketplaceIdEnumTest extends \PHPUnit_Framework_TestCase
+class MarketplaceIdEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MarketplaceIdEnum();
     }

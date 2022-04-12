@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Account\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Account\Enums\ShippingOptionTypeEnum;
 
-class ShippingOptionTypeEnumTest extends \PHPUnit_Framework_TestCase
+class ShippingOptionTypeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ShippingOptionTypeEnum();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Feed\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Feed\Types\ItemFeed;
 
-class ItemFeedTest extends \PHPUnit_Framework_TestCase
+class ItemFeedTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ItemFeed();
     }

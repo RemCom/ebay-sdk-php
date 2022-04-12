@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Enums\DiscountNameCodeType;
 
-class DiscountNameCodeTypeTest extends \PHPUnit_Framework_TestCase
+class DiscountNameCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DiscountNameCodeType();
     }

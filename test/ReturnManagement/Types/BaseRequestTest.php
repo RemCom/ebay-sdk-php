@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ReturnManagement\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ReturnManagement\Types\BaseRequest;
 
-class BaseRequestTest extends \PHPUnit_Framework_TestCase
+class BaseRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BaseRequest();
     }

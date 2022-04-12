@@ -1,13 +1,13 @@
 <?php
 namespace DTS\eBaySDK\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\HttpHandler;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 
-class HttpHandlerTest extends \PHPUnit_Framework_TestCase
+class HttpHandlerTest extends TestCase
 {
     public function testWorksWithSuccessfulRequest()
     {
@@ -17,7 +17,7 @@ class HttpHandlerTest extends \PHPUnit_Framework_TestCase
 
         $request = new Request('POST', 'http://example.com', [], '');
         $response = $httpHandler($request, [])->wait()->getBody()->getContents();
-        $this->assertContains('OK', $response);
+        $this->assertStringContainsString('OK', $response);
     }
 
     public function testWorksWithFailedRequest()
@@ -31,7 +31,7 @@ class HttpHandlerTest extends \PHPUnit_Framework_TestCase
             $httpHandler($request, [])->wait();
             $this->fail();
         } catch (\Exception $e) {
-            $this->assertContains('FAIL', $e->getMessage());
+            $this->assertStringContainsString('FAIL', $e->getMessage());
         }
     }
 }

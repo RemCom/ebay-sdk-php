@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Enums\ShippingCostPaidByOptionsCodeType;
 
-class ShippingCostPaidByOptionsCodeTypeTest extends \PHPUnit_Framework_TestCase
+class ShippingCostPaidByOptionsCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ShippingCostPaidByOptionsCodeType();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Enums\MarkUpMarkDownEventTypeCodeType;
 
-class MarkUpMarkDownEventTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class MarkUpMarkDownEventTypeCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MarkUpMarkDownEventTypeCodeType();
     }

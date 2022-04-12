@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\LookupAttributeArrayType;
 
-class LookupAttributeArrayTypeTest extends \PHPUnit_Framework_TestCase
+class LookupAttributeArrayTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new LookupAttributeArrayType();
     }

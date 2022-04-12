@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Finding\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Finding\Enums\ItemFilterType;
 
-class ItemFilterTypeTest extends \PHPUnit_Framework_TestCase
+class ItemFilterTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ItemFilterType();
     }

@@ -1,6 +1,6 @@
 <?php
 namespace DTS\eBaySDK\Test\Mocks;
-
+use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\Response;
@@ -34,6 +34,6 @@ class HttpHandler
             __DIR__.'/../Mocks/Response.xml'
         );
 
-        return new FulfilledPromise(new Response(200, [], Psr7\stream_for($xml)));
+        return new FulfilledPromise(new Response(200, [], Psr7\Utils::streamFor($xml)));
     }
 }

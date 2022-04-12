@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Account\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Account\Types\ExternalPaymentMethod;
 
-class ExternalPaymentMethodTest extends \PHPUnit_Framework_TestCase
+class ExternalPaymentMethodTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ExternalPaymentMethod();
     }

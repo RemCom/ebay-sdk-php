@@ -1,6 +1,6 @@
 <?php
 namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Mocks;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 
 class Service extends \DTS\eBaySDK\BusinessPoliciesManagement\Services\BusinessPoliciesManagementBaseService

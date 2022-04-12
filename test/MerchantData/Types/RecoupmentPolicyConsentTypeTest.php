@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Types\RecoupmentPolicyConsentType;
 
-class RecoupmentPolicyConsentTypeTest extends \PHPUnit_Framework_TestCase
+class RecoupmentPolicyConsentTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RecoupmentPolicyConsentType();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\ListingCheckoutRedirectPreferenceType;
 
-class ListingCheckoutRedirectPreferenceTypeTest extends \PHPUnit_Framework_TestCase
+class ListingCheckoutRedirectPreferenceTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ListingCheckoutRedirectPreferenceType();
     }

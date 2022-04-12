@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Browse\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Browse\Types\ConditionDistribution;
 
-class ConditionDistributionTest extends \PHPUnit_Framework_TestCase
+class ConditionDistributionTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ConditionDistribution();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Metadata\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestRequest;
 
-class GetSalesTaxJurisdictionsRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetSalesTaxJurisdictionsRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetSalesTaxJurisdictionsRestRequest();
     }

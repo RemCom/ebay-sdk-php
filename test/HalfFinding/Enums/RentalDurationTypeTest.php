@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\HalfFinding\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\HalfFinding\Enums\RentalDurationType;
 
-class RentalDurationTypeTest extends \PHPUnit_Framework_TestCase
+class RentalDurationTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RentalDurationType();
     }

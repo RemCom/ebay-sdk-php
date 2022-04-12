@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Browse\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Browse\Types\EstimatedAvailability;
 
-class EstimatedAvailabilityTest extends \PHPUnit_Framework_TestCase
+class EstimatedAvailabilityTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new EstimatedAvailability();
     }

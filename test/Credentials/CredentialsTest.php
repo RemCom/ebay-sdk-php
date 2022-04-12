@@ -1,9 +1,9 @@
 <?php
 namespace DTS\eBaySDK\Credentials\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Credentials\Credentials;
 
-class CredentialsTest extends \PHPUnit_Framework_TestCase
+class CredentialsTest extends TestCase
 {
     public function testHasGetters()
     {

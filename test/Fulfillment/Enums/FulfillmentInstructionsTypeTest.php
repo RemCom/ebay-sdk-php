@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Fulfillment\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Fulfillment\Enums\FulfillmentInstructionsType;
 
-class FulfillmentInstructionsTypeTest extends \PHPUnit_Framework_TestCase
+class FulfillmentInstructionsTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FulfillmentInstructionsType();
     }

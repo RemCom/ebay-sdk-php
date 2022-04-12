@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ReturnManagement\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ReturnManagement\Enums\ShipmentStatusType;
 
-class ShipmentStatusTypeTest extends \PHPUnit_Framework_TestCase
+class ShipmentStatusTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ShipmentStatusType();
     }

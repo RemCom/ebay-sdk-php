@@ -1,11 +1,11 @@
 <?php
 namespace DTS\eBaySDK\Test\Trading\Services;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Services\TradingService;
 use DTS\eBaySDK\Trading\Types;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class AuthTokenTest extends \PHPUnit_Framework_TestCase
+class AuthTokenTest extends TestCase
 {
 
     public function testAuthTokenIsUsedInRequst()

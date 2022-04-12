@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\GetDescriptionTemplatesResponseType;
 
-class GetDescriptionTemplatesResponseTypeTest extends \PHPUnit_Framework_TestCase
+class GetDescriptionTemplatesResponseTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetDescriptionTemplatesResponseType();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Enums\SellerGuaranteeLevelCodeType;
 
-class SellerGuaranteeLevelCodeTypeTest extends \PHPUnit_Framework_TestCase
+class SellerGuaranteeLevelCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SellerGuaranteeLevelCodeType();
     }

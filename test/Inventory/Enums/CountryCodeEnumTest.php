@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Inventory\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Inventory\Enums\CountryCodeEnum;
 
-class CountryCodeEnumTest extends \PHPUnit_Framework_TestCase
+class CountryCodeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CountryCodeEnum();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\AffiliateTrackingDetailsType;
 
-class AffiliateTrackingDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class AffiliateTrackingDetailsTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AffiliateTrackingDetailsType();
     }

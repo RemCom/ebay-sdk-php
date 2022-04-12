@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Enums\AddressStatusCodeType;
 
-class AddressStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class AddressStatusCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AddressStatusCodeType();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Account\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Account\Enums\ProgramTypeEnum;
 
-class ProgramTypeEnumTest extends \PHPUnit_Framework_TestCase
+class ProgramTypeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ProgramTypeEnum();
     }

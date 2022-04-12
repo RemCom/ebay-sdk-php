@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\BusinessPoliciesManagement\Types\RemoveProfileResponse;
 
-class RemoveProfileResponseTest extends \PHPUnit_Framework_TestCase
+class RemoveProfileResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RemoveProfileResponse();
     }

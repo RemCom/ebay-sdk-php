@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ProductMetadata\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionResponse;
 
-class GetProductSearchDataVersionResponseTest extends \PHPUnit_Framework_TestCase
+class GetProductSearchDataVersionResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetProductSearchDataVersionResponse();
     }

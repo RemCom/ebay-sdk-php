@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Product\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Product\Types\StockPhotoURL;
 
-class StockPhotoURLTest extends \PHPUnit_Framework_TestCase
+class StockPhotoURLTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new StockPhotoURL();
     }

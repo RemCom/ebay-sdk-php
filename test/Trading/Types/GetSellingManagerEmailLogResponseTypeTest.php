@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogResponseType;
 
-class GetSellingManagerEmailLogResponseTypeTest extends \PHPUnit_Framework_TestCase
+class GetSellingManagerEmailLogResponseTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetSellingManagerEmailLogResponseType();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\PostOrder\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\PostOrder\Enums\AppealCloseReasonEnum;
 
-class AppealCloseReasonEnumTest extends \PHPUnit_Framework_TestCase
+class AppealCloseReasonEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AppealCloseReasonEnum();
     }

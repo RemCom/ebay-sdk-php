@@ -1,6 +1,6 @@
 <?php
 namespace DTS\eBaySDK\Types\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Test\Mocks\AmountClass;
 use DTS\eBaySDK\Test\Mocks\SimpleClass;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
@@ -13,11 +13,11 @@ use DTS\eBaySDK\Test\Mocks\StringType;
 use DTS\eBaySDK\Test\Mocks\TokenType;
 use DTS\eBaySDK\Test\Mocks\URIType;
 
-class ToArrayTest extends \PHPUnit_Framework_TestCase
+class ToArrayTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ComplexClass();
     }

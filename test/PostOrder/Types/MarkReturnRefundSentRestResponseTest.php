@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\PostOrder\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\PostOrder\Types\MarkReturnRefundSentRestResponse;
 
-class MarkReturnRefundSentRestResponseTest extends \PHPUnit_Framework_TestCase
+class MarkReturnRefundSentRestResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MarkReturnRefundSentRestResponse();
     }

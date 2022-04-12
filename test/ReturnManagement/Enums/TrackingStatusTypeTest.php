@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ReturnManagement\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ReturnManagement\Enums\TrackingStatusType;
 
-class TrackingStatusTypeTest extends \PHPUnit_Framework_TestCase
+class TrackingStatusTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TrackingStatusType();
     }

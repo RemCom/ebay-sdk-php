@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Product\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Product\Types\CompatibilitySort;
 
-class CompatibilitySortTest extends \PHPUnit_Framework_TestCase
+class CompatibilitySortTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CompatibilitySort();
     }

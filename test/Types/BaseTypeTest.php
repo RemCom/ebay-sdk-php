@@ -1,13 +1,13 @@
 <?php
 namespace DTS\eBaySDK\Types\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Types\BaseType;
 
-class BaseTypeTest extends \PHPUnit_Framework_TestCase
+class BaseTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BaseType();
     }

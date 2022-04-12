@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Fulfillment\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Fulfillment\Enums\SoldFormatEnum;
 
-class SoldFormatEnumTest extends \PHPUnit_Framework_TestCase
+class SoldFormatEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SoldFormatEnum();
     }

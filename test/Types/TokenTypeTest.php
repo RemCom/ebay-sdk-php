@@ -1,13 +1,13 @@
 <?php
 namespace DTS\eBaySDK\Types\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Types\TokenType;
 
-class TokenTypeTest extends \PHPUnit_Framework_TestCase
+class TokenTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TokenType();
     }
@@ -26,6 +26,6 @@ class TokenTypeTest extends \PHPUnit_Framework_TestCase
     {
         $this->obj->value = 'foo';
         $this->assertEquals('foo', $this->obj->value);
-        $this->assertInternalType('string', $this->obj->value);
+        $this->assertIsString( $this->obj->value);
     }
 }

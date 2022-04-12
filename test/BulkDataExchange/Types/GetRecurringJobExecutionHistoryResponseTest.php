@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\BulkDataExchange\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\BulkDataExchange\Types\GetRecurringJobExecutionHistoryResponse;
 
-class GetRecurringJobExecutionHistoryResponseTest extends \PHPUnit_Framework_TestCase
+class GetRecurringJobExecutionHistoryResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetRecurringJobExecutionHistoryResponse();
     }

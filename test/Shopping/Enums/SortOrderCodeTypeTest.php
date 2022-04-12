@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Shopping\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Shopping\Enums\SortOrderCodeType;
 
-class SortOrderCodeTypeTest extends \PHPUnit_Framework_TestCase
+class SortOrderCodeTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SortOrderCodeType();
     }

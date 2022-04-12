@@ -1,6 +1,6 @@
 <?php
 namespace DTS\eBaySDK\Test\Trading\Mocks;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\GeteBayOfficialTimeRequestType;
 
 class Service extends \DTS\eBaySDK\Trading\Services\TradingBaseService

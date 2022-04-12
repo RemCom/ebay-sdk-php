@@ -1,12 +1,12 @@
 <?php
 namespace DTS\eBaySDK\Test\BulkDataExchange\Services;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\BulkDataExchange\Services\BulkDataExchangeBaseService;
 use DTS\eBaySDK\BulkDataExchange\Services\BulkDataExchangeService;
 use DTS\eBaySDK\Test\BulkDataExchange\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends TestCase
 {
     public function testConfigDefinitions()
     {

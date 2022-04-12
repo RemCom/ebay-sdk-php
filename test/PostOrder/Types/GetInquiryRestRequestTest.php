@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\PostOrder\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\PostOrder\Types\GetInquiryRestRequest;
 
-class GetInquiryRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetInquiryRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetInquiryRestRequest();
     }

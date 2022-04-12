@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Fulfillment\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Fulfillment\Enums\FinalDestinationTypeEnum;
 
-class FinalDestinationTypeEnumTest extends \PHPUnit_Framework_TestCase
+class FinalDestinationTypeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FinalDestinationTypeEnum();
     }

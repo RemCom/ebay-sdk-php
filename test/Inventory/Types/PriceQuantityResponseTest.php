@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Inventory\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Inventory\Types\PriceQuantityResponse;
 
-class PriceQuantityResponseTest extends \PHPUnit_Framework_TestCase
+class PriceQuantityResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PriceQuantityResponse();
     }

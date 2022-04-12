@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\BulkDataExchange\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\BulkDataExchange\Enums\IncludeListingType;
 
-class IncludeListingTypeTest extends \PHPUnit_Framework_TestCase
+class IncludeListingTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new IncludeListingType();
     }

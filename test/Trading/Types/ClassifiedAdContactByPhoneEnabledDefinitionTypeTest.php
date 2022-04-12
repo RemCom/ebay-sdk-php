@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\ClassifiedAdContactByPhoneEnabledDefinitionType;
 
-class ClassifiedAdContactByPhoneEnabledDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class ClassifiedAdContactByPhoneEnabledDefinitionTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ClassifiedAdContactByPhoneEnabledDefinitionType();
     }

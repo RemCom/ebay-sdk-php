@@ -1,13 +1,13 @@
 <?php
 namespace DTS\eBaySDK\Types\Test;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Types\BooleanType;
 
-class BooleanTypeTest extends \PHPUnit_Framework_TestCase
+class BooleanTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BooleanType();
     }
@@ -26,6 +26,6 @@ class BooleanTypeTest extends \PHPUnit_Framework_TestCase
     {
         $this->obj->value = true;
         $this->assertEquals(true, $this->obj->value);
-        $this->assertInternalType('boolean', $this->obj->value);
+        $this->assertIsBool( $this->obj->value);
     }
 }

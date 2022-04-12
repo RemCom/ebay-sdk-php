@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Analytics\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Analytics\Types\Definition;
 
-class DefinitionTest extends \PHPUnit_Framework_TestCase
+class DefinitionTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new Definition();
     }

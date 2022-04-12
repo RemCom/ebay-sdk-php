@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Catalog\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Catalog\Enums\ReferenceType;
 
-class ReferenceTypeTest extends \PHPUnit_Framework_TestCase
+class ReferenceTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReferenceType();
     }

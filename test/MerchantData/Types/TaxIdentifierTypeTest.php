@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Types\TaxIdentifierType;
 
-class TaxIdentifierTypeTest extends \PHPUnit_Framework_TestCase
+class TaxIdentifierTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TaxIdentifierType();
     }

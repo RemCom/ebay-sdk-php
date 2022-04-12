@@ -1,12 +1,12 @@
 <?php
 namespace DTS\eBaySDK\Test\HalfFinding\Services;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\HalfFinding\Services\HalfFindingBaseService;
 use DTS\eBaySDK\HalfFinding\Services\HalfFindingService;
 use DTS\eBaySDK\Test\HalfFinding\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends TestCase
 {
     public function testConfigDefinitions()
     {

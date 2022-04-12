@@ -1,12 +1,12 @@
 <?php
 namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Services;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ResolutionCaseManagement\Services\ResolutionCaseManagementBaseService;
 use DTS\eBaySDK\ResolutionCaseManagement\Services\ResolutionCaseManagementService;
 use DTS\eBaySDK\Test\ResolutionCaseManagement\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends TestCase
 {
     public function testConfigDefinitions()
     {

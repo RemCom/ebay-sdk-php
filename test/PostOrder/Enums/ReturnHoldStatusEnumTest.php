@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\PostOrder\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\PostOrder\Enums\ReturnHoldStatusEnum;
 
-class ReturnHoldStatusEnumTest extends \PHPUnit_Framework_TestCase
+class ReturnHoldStatusEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReturnHoldStatusEnum();
     }

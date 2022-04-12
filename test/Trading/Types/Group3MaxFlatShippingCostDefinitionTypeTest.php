@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\Group3MaxFlatShippingCostDefinitionType;
 
-class Group3MaxFlatShippingCostDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class Group3MaxFlatShippingCostDefinitionTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new Group3MaxFlatShippingCostDefinitionType();
     }

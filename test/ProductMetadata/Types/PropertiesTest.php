@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ProductMetadata\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ProductMetadata\Types\Properties;
 
-class PropertiesTest extends \PHPUnit_Framework_TestCase
+class PropertiesTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new Properties();
     }

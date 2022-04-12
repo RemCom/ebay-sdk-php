@@ -1,12 +1,12 @@
 <?php
 namespace DTS\eBaySDK\Test\Feedback\Services;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Feedback\Services\FeedbackBaseService;
 use DTS\eBaySDK\Feedback\Services\FeedbackService;
 use DTS\eBaySDK\Test\Feedback\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends TestCase
 {
     public function testConfigDefinitions()
     {

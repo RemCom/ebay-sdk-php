@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\ReturnManagement\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\ReturnManagement\Types\ProvideTrackingInfoResponse;
 
-class ProvideTrackingInfoResponseTest extends \PHPUnit_Framework_TestCase
+class ProvideTrackingInfoResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ProvideTrackingInfoResponse();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Feedback\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Feedback\Types\DateRange;
 
-class DateRangeTest extends \PHPUnit_Framework_TestCase
+class DateRangeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DateRange();
     }

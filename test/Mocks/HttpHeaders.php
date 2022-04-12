@@ -1,6 +1,6 @@
 <?php
 namespace DTS\eBaySDK\Test\Mocks;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\HttpHeadersTrait;
 
 class HttpHeaders

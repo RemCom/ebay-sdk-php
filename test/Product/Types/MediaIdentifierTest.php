@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Product\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Product\Types\MediaIdentifier;
 
-class MediaIdentifierTest extends \PHPUnit_Framework_TestCase
+class MediaIdentifierTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MediaIdentifier();
     }

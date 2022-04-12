@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Taxonomy\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Taxonomy\Enums\AspectModeEnum;
 
-class AspectModeEnumTest extends \PHPUnit_Framework_TestCase
+class AspectModeEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AspectModeEnum();
     }

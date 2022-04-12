@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\MerchantData\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\MerchantData\Types\BestOfferDetailsType;
 
-class BestOfferDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class BestOfferDetailsTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BestOfferDetailsType();
     }

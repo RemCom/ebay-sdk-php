@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Catalog\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Catalog\Types\CreateChangeRequestRestRequest;
 
-class CreateChangeRequestRestRequestTest extends \PHPUnit_Framework_TestCase
+class CreateChangeRequestRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CreateChangeRequestRestRequest();
     }

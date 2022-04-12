@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Inventory\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Inventory\Enums\ListingStatusEnum;
 
-class ListingStatusEnumTest extends \PHPUnit_Framework_TestCase
+class ListingStatusEnumTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ListingStatusEnum();
     }

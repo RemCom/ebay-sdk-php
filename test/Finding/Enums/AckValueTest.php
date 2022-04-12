@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Finding\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Finding\Enums\AckValue;
 
-class AckValueTest extends \PHPUnit_Framework_TestCase
+class AckValueTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AckValue();
     }

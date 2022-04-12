@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Compliance\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Compliance\Types\NameValueList;
 
-class NameValueListTest extends \PHPUnit_Framework_TestCase
+class NameValueListTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new NameValueList();
     }

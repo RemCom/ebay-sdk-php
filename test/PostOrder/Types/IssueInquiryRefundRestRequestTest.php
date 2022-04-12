@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\PostOrder\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\PostOrder\Types\IssueInquiryRefundRestRequest;
 
-class IssueInquiryRefundRestRequestTest extends \PHPUnit_Framework_TestCase
+class IssueInquiryRefundRestRequestTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new IssueInquiryRefundRestRequest();
     }

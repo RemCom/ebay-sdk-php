@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Analytics\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Analytics\Types\StandardsProfile;
 
-class StandardsProfileTest extends \PHPUnit_Framework_TestCase
+class StandardsProfileTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new StandardsProfile();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Inventory\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Inventory\Types\GetInventoryItemRestResponse;
 
-class GetInventoryItemRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetInventoryItemRestResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetInventoryItemRestResponse();
     }

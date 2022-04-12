@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Account\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Account\Types\GetASalesTaxTableRestResponse;
 
-class GetASalesTaxTableRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetASalesTaxTableRestResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetASalesTaxTableRestResponse();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\StoreSubscriptionArrayType;
 
-class StoreSubscriptionArrayTypeTest extends \PHPUnit_Framework_TestCase
+class StoreSubscriptionArrayTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new StoreSubscriptionArrayType();
     }

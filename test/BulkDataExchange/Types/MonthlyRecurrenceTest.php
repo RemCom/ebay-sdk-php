@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\BulkDataExchange\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\BulkDataExchange\Types\MonthlyRecurrence;
 
-class MonthlyRecurrenceTest extends \PHPUnit_Framework_TestCase
+class MonthlyRecurrenceTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MonthlyRecurrence();
     }

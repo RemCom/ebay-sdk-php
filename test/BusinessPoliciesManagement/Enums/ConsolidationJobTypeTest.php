@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Enums;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\BusinessPoliciesManagement\Enums\ConsolidationJobType;
 
-class ConsolidationJobTypeTest extends \PHPUnit_Framework_TestCase
+class ConsolidationJobTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ConsolidationJobType();
     }

@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Account\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Account\Types\GetShippingRateTablesRestResponse;
 
-class GetShippingRateTablesRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetShippingRateTablesRestResponseTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetShippingRateTablesRestResponse();
     }

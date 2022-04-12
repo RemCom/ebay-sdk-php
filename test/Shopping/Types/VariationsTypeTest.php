@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Shopping\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Shopping\Types\VariationsType;
 
-class VariationsTypeTest extends \PHPUnit_Framework_TestCase
+class VariationsTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new VariationsType();
     }

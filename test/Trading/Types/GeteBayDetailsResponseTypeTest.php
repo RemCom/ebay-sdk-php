@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Trading\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Trading\Types\GeteBayDetailsResponseType;
 
-class GeteBayDetailsResponseTypeTest extends \PHPUnit_Framework_TestCase
+class GeteBayDetailsResponseTypeTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GeteBayDetailsResponseType();
     }

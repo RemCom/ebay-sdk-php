@@ -9,14 +9,14 @@
  */
 
 namespace DTS\eBaySDK\Test\Browse\Types;
-
+use PHPUnit\Framework\TestCase;
 use DTS\eBaySDK\Browse\Types\SellerLegalInfo;
 
-class SellerLegalInfoTest extends \PHPUnit_Framework_TestCase
+class SellerLegalInfoTest extends TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SellerLegalInfo();
     }
